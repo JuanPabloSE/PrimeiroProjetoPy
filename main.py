@@ -19,7 +19,7 @@ def validar_nota():
     while True:
         try:
             nota = float(input("Digite a nota (0,0 - 10,0): "))
-            if 0 <= nota <= 10:
+            if 0.0 <= nota <= 10.0:
                 return nota
             else:
                 print("❌ Erro: A nota deve estar entre 0,0 e 10,0!")
