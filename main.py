@@ -10,9 +10,9 @@ def validar_quantidade_alunos():
             if 2 <= quantidade <= 7:
                 return quantidade
             else:
-                print("❌ Erro: A quantidade deve estar entre 2 e 7 alunos!")
+                print("Erro: A quantidade deve estar entre 2 e 7 alunos!")
         except ValueError:
-            print("❌ Erro: Digite um número inteiro válido!")
+            print("Erro: Digite um número inteiro válido!")
 
 def validar_nota():
 
@@ -22,9 +22,9 @@ def validar_nota():
             if 0.0 <= nota <= 10.0:
                 return nota
             else:
-                print("❌ Erro: A nota deve estar entre 0,0 e 10,0!")
+                print("Erro: A nota deve estar entre 0,0 e 10,0!")
         except ValueError:
-            print("❌ Erro: Digite um número válido!")
+            print("Erro: Digite um número válido!")
 
 
 def coletar_dados_alunos(quantidade):
@@ -38,7 +38,7 @@ def coletar_dados_alunos(quantidade):
 
         nome = input("Digite o nome do aluno: ").strip()
         if not nome:
-            print("❌ Erro: O nome não pode ser vazio!")
+            print("Erro: O nome não pode ser vazio!")
             i -= 1
             continue
 
